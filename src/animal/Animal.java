@@ -1,16 +1,16 @@
 package animal;
 
-public class Animal {
-	private String raca;
-	private double peso;
-	private int idade;
-	
-	public Animal(String raca){
-		this.raca = raca;
-	}
+public abstract class Animal {
+	protected String raca;
+	protected double peso;
+	protected int idade;
 	
 	public String getRaca(){
 		return raca;
+	}
+	
+	public void setRaca(String raca){
+		this.raca = raca;
 	}
 	
 	public double getPeso(){
@@ -29,7 +29,5 @@ public class Animal {
 		this.idade = idade;
 	}
 	
-	public String fazerBarulho(String som){
-		return som;
-	}
+	public abstract String fazerBarulho();
 }
