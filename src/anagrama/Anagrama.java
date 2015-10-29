@@ -10,7 +10,6 @@ public class Anagrama {
 		palavra1 = palavra1.toLowerCase().replaceAll(" ", "");
 		palavra2 = palavra2.toLowerCase().replaceAll(" ", "");
 		
-		System.out.println(palavra1);
 		List<Character> primeiraLista = new ArrayList<Character>();
 		List<Character> segundaLista = new ArrayList<Character>();
 		
